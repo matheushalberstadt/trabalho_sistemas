@@ -7,7 +7,7 @@ entity control_path is
         -- inputs
         data_av     : in std_logic;
         sts : in Status;
-        ld_done: out std_logic;
+        done: out std_logic;
 
         clk         : in std_logic;
         rst         : in std_logic;
@@ -141,7 +141,7 @@ begin
     cmd.ld_right            <= '1' when currentState = S7 or (currentState = S8 and sts.eh_menor = '1') or currentState = S14 else '0';
     cmd.ld_mid              <= '1' when currentState = S10;
     cmd.ld_pos              <= '1' when (currentState = S3 and sts.len_is_0= '1') or (currentState =S9 and sts.eh_menor = '0' and sts.eh_igual = '0')           or            (currentState= S12 and sts.eh_igual = '1') else '0';
-    ld_done             <= '1' when currentState = S15;
+    done             <= '1' when currentState = S15;
 
     --Output 2
     cmd.sel_mux_pos         <= '1' when (currentState = S3 and sts.len_is_0 = '1') or (currentState = S9 and sts.eh_menor = '0' and sts.eh_igual = '0') else '0';
