@@ -1,0 +1,10 @@
+# Configuracao da extensao VHDL LS do VS Code.
+# Cada pasta de exercicio e uma biblioteca separada, para que nomes repetidos
+# (ex: somadorCompleto em varias pastas) nao deem erro de "duplicate".
+# Exercicio novo -> adicionar uma linha:  lib_nomeDaPasta.files = ["nomeDaPasta/*.vhd"]
+# (se o nome da pasta tiver espaco ou acento, use um nome sem eles depois do lib_)
+
+[libraries]
+lib_exemplo_fulladder.files  = ["exemplo_fulladder/*.vhd"]
+lib_BubbleSort.files         = ["BubbleSort/*.vhd"]
+lib_ExponentialSort.files    = ["ExponentialSort/*.vhd"]

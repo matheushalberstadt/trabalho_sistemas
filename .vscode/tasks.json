@@ -1,0 +1,28 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Simular VHDL (GHDL)",
+            "type": "shell",
+            "command": "bash",
+            "args": [
+                "${workspaceFolder}/.vscode/sim.sh",
+                "${file}",
+                "${input:tempoSimulacao}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "tempoSimulacao",
+            "type": "promptString",
+            "description": "Tempo de simulacao (ex: 1000ns, 2us)",
+            "default": "1000ns"
+        }
+    ]
+}
