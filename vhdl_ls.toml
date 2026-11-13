@@ -7,4 +7,4 @@
 [libraries]
 lib_exemplo_fulladder.files  = ["exemplo_fulladder/*.vhd"]
 lib_BubbleSort.files         = ["BubbleSort/*.vhd"]
-lib_ExponentialSort.files    = ["ExponentialSort/*.vhd"]
+lib_ExponentialSearch.files  = ["ExponentialSearch/*.vhd"]

@@ -10,5 +10,5 @@ entity muxNbits is
         sel         : in STD_LOGIC_VECTOR(tam_sel - 1 downto 0);
         saida       : out STD_LOGIC_VECTOR(tam_dados - 1 downto 0);
         
-        );
+    );
 end muxNbits;

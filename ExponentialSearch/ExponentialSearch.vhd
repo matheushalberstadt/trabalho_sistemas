@@ -5,7 +5,7 @@ use work.ExponentialSearch_pkg.all;
 
 entity ExponentialSearch is
     generic (
-        WIDTH : integer := 8;
+        WIDTH : integer := 8
     );
     port (
         clk         : in std_logic;

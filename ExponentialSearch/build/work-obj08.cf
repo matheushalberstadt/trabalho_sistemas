@@ -1,12 +1,19 @@
 v 4
-file "/home/eduardo/trabalho_sistemas/ExponentialSearch/" "ControlPath.vhd" "09b04444c2ed189aa34ff2a9014ffaf2b047d411" "20261111125526.859":
-  entity control_path at 1( 0) + 0 on 12;
-  architecture arch_control of control_path at 24( 428) + 0 on 13;
-file "/home/eduardo/trabalho_sistemas/ExponentialSearch/" "DataPath.vhd" "cce28f3e7e6a22d2036cb863a19362a2ee1d39df" "20261111125526.779":
-  entity data_path at 1( 0) + 0 on 4;
-  architecture structural of data_path at 24( 726) + 0 on 4;
-file "/home/eduardo/trabalho_sistemas/ExponentialSearch/" "ExponentialSearch_pkg.vhd" "f61c16210b3a473dc8eae9f119ecabedbe3d2cd7" "20261111125526.859":
-  package exponentialsearch_pkg at 2( 1) + 0 on 11;
+file "/home/eduardo/trabalho_sistemas/ExponentialSearch/" "adderNbits.vhd" "6328c467b1736745e43740c7b18fe79fe58454f1" "20261111201324.721":
+  entity addernbits at 1( 0) + 0 on 18;
+  architecture estrutura_generica of addernbits at 18( 410) + 0 on 19;
+  architecture comportamental_generica of addernbits at 35( 946) + 0 on 20;
+file "/home/eduardo/trabalho_sistemas/ExponentialSearch/" "somadorCompleto.vhd" "d45761f44bd13d6c5971717613b66ee33f688a66" "20261111201324.719":
+  entity somadorcompleto at 2( 1) + 0 on 16;
+  architecture arch1 of somadorcompleto at 16( 217) + 0 on 17;
 file "/home/eduardo/trabalho_sistemas/ExponentialSearch/" "tb_ControlPath.vhd" "35b9e10ede4aba9f0b93238464ccff78739dd242" "20261111125526.859":
   entity tbcontrolpath at 1( 0) + 0 on 14;
   architecture tb of tbcontrolpath at 8( 124) + 0 on 15;
+file "/home/eduardo/trabalho_sistemas/ExponentialSearch/" "ExponentialSearch_pkg.vhd" "f61c16210b3a473dc8eae9f119ecabedbe3d2cd7" "20261111125526.859":
+  package exponentialsearch_pkg at 2( 1) + 0 on 11;
+file "/home/eduardo/trabalho_sistemas/ExponentialSearch/" "DataPath.vhd" "cce28f3e7e6a22d2036cb863a19362a2ee1d39df" "20261111125526.779":
+  entity data_path at 1( 0) + 0 on 4;
+  architecture structural of data_path at 24( 726) + 0 on 4;
+file "/home/eduardo/trabalho_sistemas/ExponentialSearch/" "ControlPath.vhd" "09b04444c2ed189aa34ff2a9014ffaf2b047d411" "20261111125526.859":
+  entity control_path at 1( 0) + 0 on 12;
+  architecture arch_control of control_path at 24( 428) + 0 on 13;
