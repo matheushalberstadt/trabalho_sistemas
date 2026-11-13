@@ -12,7 +12,7 @@ architecture tb of tbControlPath is
     signal data_av  : std_logic;
     signal sts      : Status;
     signal cmd      : Command;
-    signal ld_done  : std_logic;
+    signal done  : std_logic;
     signal sel_mem  : std_logic;
     signal ld_mem   : std_logic;
 
@@ -22,7 +22,7 @@ begin
         port map (
             data_av => data_av,
             sts     => sts,
-            ld_done => ld_done,
+            done    => done,
             clk     => clk,
             rst     => rst,
             cmd     => cmd,
