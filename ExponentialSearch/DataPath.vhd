@@ -146,5 +146,19 @@ begin
     saida_mux_0 <= saida_i      when cmd.sel_mux_0 = '0' else
                    saida_mid;   
 
+    saida_mux_right <= saida_adder2 when cmd.sel_mux_right = '0' else
+                        saida_i;
+
+    saida_mux_left <= (saida_i(7 downto 1) & '0') when cmd.sel_mux_left = '0' else
+                        saida_adder2;
+
+    saida_mux_i    <= x"01" when cmd.sel_mux_i = '0' else
+                        saida_i(6 downto 0) & '0';
+    --flags de saida
+    sts.len_is_0 <= xor saida_key;
+    sts.eh_menor <= saida_adder2(7);
+    sts.eh_igual <= nor saida_adder2;
+
+    data_out <= x"00";
     
 end structural;
